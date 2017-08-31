@@ -1,7 +1,7 @@
 <?php
 include "phpCAS/CAS.php";
 
-phpCAS::setDebug("/home/youportal/tmp/tmp/CAS.log");
+//phpCAS::setDebug("/home/youportal/tmp/tmp/CAS.log");
 phpCAS::setVerbose(true);
 
 phpCAS::client(CAS_VERSION_3_0, $cas_host, $cas_port, $cas_context, "https://".$_SERVER["SERVER_NAME"]."/");
