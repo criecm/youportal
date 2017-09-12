@@ -1,0 +1,54 @@
+<?php
+
+/* Available tabs (edit layoutchannelpagstrucs.php to filter display by CAS attribute) */
+
+/**
+ * urls:
+ *   - "http://serveur/..." s'ouvrira dans une "tab"
+ *   - "frame http://serveur/..." s'ouvrira dans une frame locale
+ */
+$tabs = array(
+  "Bureau Virtuel Personnel" => array(
+    "Messagerie" => "https://wmail.univ.land/",
+    "Mot de Passe" => "https://auth.univ.land/myaccount/",
+    "Mes congés" => "https://gefico.univ.land/hamac.html",
+    "Gestion Financière" => "https://gefico.univ.land/gfc-depenses.html",
+    "Mon dossier professionnel" => "https://gefico.univ.land/profiler.html",
+  ),
+  "Bureau Virtuel Etudiant" => array(
+    "Moodle" => "https://moodle.univ.land/",
+    "Messagerie" => "https://wmail.univ.land/",
+    "Mot de Passe" => "https://auth.univ.land/Password/",
+  ),
+  "Outils de Communication" => array(
+    "Listes de diffusion" => "https://listes.univ.land",
+    "Partage de fichiers" => "https://filesender.renater.fr/Shibboleth.sso/Login?target=https%3A%2F%2Ffilesender.renater.fr%2Findex.php%3Fs%3Dhome&SAMLDS=1&target=https%3A%2F%2Ffilesender.renater.fr%2Findex.php%3Fs%3Dhome&entityID=https%3A%2F%2Fauth.univ.land%2Fidp%2Fshibboleth",
+    "Planification de réunions" => "https://groupes.renater.fr/simplesamlphp/module.php/core/as_login.php?AuthId=default-sp&amp;ReturnTo=https%3A%2F%2Fgroupes.renater.fr%2Freunion%2F&amp;saml:idp=https://auth.univ.land/idp/shibboleth",
+  ),
+  "Scolarité" => array(
+    "Agap" => "https://pedagogie.univ.land/agap/",
+    "Sonate" => "https://sonate.univ.land/",
+    "Moodle" => "https://moodle.univ.land/login/index.php?authCAS=CAS",
+    "Stages" => "https://emplois.univ.land/",
+  ),
+  "Informations" => array(
+    "Calendar" => "https://agenda.univ.land/show_calendar.html",
+  ),
+  "Assistance" => "https://help.univ.land/",
+);
+
+$cas_host="auth.univ.land";
+$cas_port=443;
+$cas_context="/cas";
+
+$cas_uri="https://".$cas_host."/".$cas_context;
+
+$cas_server_ca_cert_path="/usr/local/etc/ssl/cert.pem";
+
+$logo="images/logo.png";
+
+$logourl="#";
+
+$version="0.3";
+
+$entitle="YouPortal $version";

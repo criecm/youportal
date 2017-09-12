@@ -1,0 +1,41 @@
+<?php
+/**
+  * let you select display layout by affiliation
+  */
+$proftabs=array(
+  "student" => array(
+    "Bureau Virtuel" => $tabs['Bureau Virtuel Etudiant'],
+    "Outils de Communication" => $tabs['Outils de Communication'],
+    "Scolarité" => $tabs['Scolarité'],
+    "Informations" => $tabs['Informations'],
+    "Assistance" => $tabs['Assistance'],
+  ),
+  "staff" => array(
+    "Bureau Virtuel" => $tabs['Bureau Virtuel Personnel'],
+    "Outils de Communication" => $tabs['Outils de Communication'],
+    "Scolarité" => $tabs['Scolarité'],
+    "Informations" => $tabs['Informations'],
+    "Assistance" => $tabs['Assistance'],
+  ),
+  "faculty" => array(
+    "Bureau Virtuel" => $tabs['Bureau Virtuel Personnel'],
+    "Outils de Communication" => $tabs['Outils de Communication'],
+    "Scolarité" => $tabs['Scolarité'],
+    "Informations" => $tabs['Informations'],
+    "Assistance" => $tabs['Assistance'],
+  ),
+  "guest" => array(
+    "Bureau Virtuel" => $tabs['Bureau Virtuel Personnel'],
+    "Outils de Communication" => $tabs['Outils de Communication'],
+    "Informations" => $tabs['Informations'],
+    "Assistance" => $tabs['Assistance'],
+  ),
+);
+
+// On prend le menu qui correspond a l'affiliation
+if (array_key_exists($affil,$proftabs)) {
+  $tabs=$proftabs[$affil];
+} else {
+  header("HTTP/1.1 507 Unavailable profile");
+}
+
