@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded',function() {
 </section>
 
   <footer>
-  YouPortal <?php echo $version ?> Digital Technology Early Advanced Preview ®<?php echo (string) (int) date('Y')+1; ?>
+  <a href="https://github.com/criecm/youportal">YouPortal <?php echo $version ?></a> Digital Technology Early Advanced Preview ®<?php echo (string) (int) date('Y')+1; ?>
   </footer>
 </body>
 </html>
