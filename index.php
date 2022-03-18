@@ -2,7 +2,7 @@
 <html>
 <head>
 <?php include "config.php"; ?>
-<title>$entitle</title>
+<title><?php echo "$entitle" ?></title>
 <?php include "lib.php"; ?>
 <?php include "layoutchannelpagstrucs.php"; ?>
 <link type="text/css" href="css/ent.css" rel="stylesheet">

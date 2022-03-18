@@ -37,6 +37,12 @@ $tabs = array(
   "Assistance" => "https://help.univ.land/",
 );
 
+// Entity name
+$entity="Our Univ"
+
+// Page title
+$entitle="$entity portal"
+
 $cas_host="auth.univ.land";
 $cas_port=443;
 $cas_context="/cas";
