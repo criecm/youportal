@@ -1,9 +1,10 @@
 <?php
 include "phpCAS/CAS.php";
 
+phpCAS::setDebug("/home/youportal/tmp/tmp/CAS.log");
 phpCAS::setVerbose(true);
 
-phpCAS::client(CAS_VERSION_3_0, $cas_host, $cas_port, $cas_context);
+phpCAS::client(CAS_VERSION_3_0, $cas_host, $cas_port, $cas_context, "https://".$_SERVER["SERVER_NAME"]."/");
 
 if (file_exists($cas_server_ca_cert_path)) {
   phpCAS::setCasServerCACert($cas_server_ca_cert_path);
