@@ -94,5 +94,10 @@ document.addEventListener('DOMContentLoaded',function() {
   <footer>
   <a href="https://github.com/criecm/youportal">YouPortal <?php echo $version ?></a> Digital Technology Early Advanced Preview ®<?php echo (string) (int) date('Y')+1; ?>
   </footer>
+<?php
+if (file_exists("stats.html")) {
+  require("stats.html");
+}
+?>
 </body>
 </html>
